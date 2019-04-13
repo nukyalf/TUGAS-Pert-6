@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        />
+    <!--pada bagian script di atas adalah untuk mengirmkan gambar ke bagian costume1 yaitu dengan id icon,width 60 dan height 60 lalu
+    untuk paddingnya adalah 5dp-->
+
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Liniear Layout adalah design tampilan pada aplikasi kita dengan tata letak secara vertical dan horizontal dimana tata letak
+         aplikasi kita hanya bisa memasukan media secara mendatar dan menurun.-->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium Text"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:textColor="#4d4d4d" />
+        <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginLeft="10dp"/>
+        <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+                    nya adalah "TextView" dimana pada android text login menampilkan kata,
+                    ,dan text dengan berukuran 10sp -->
+    </LinearLayout>
+</LinearLayout>

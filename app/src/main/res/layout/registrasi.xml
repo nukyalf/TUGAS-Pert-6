@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".registrasi" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--Liniear Layout adalah design tampilan pada aplikasi kita dengan tata letak secara vertical dan
+                horizontal dimana tata letak aplikasi kita hanya bisa memasukan media secara mendatar dan menurun.-->
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+            nya adalah "Nama" dimana pada android text login menampilkan kata,
+            ,dan text dengan berukuran 15sp-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=""
+        android:textSize="15sp"/>
+    <!-- pada bagian EditText adalah cara standar untuk memasukkan teks diaplikasi Android. Jika pengguna diminta untuk
+        memasukkan suatu teks, maka View ini lah yang menjadi sarana utama untuk melakukannya,dan pada hint yaitu text yang
+        transparan dimana teks ini akan menghilang ketika kita menginputkan teks,-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+            nya adalah "Nama" dimana pada android text login menampilkan kata,
+            ,dan text dengan berukuran 15sp dan dengan style textnya adalah teal/bold-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=""
+        android:textSize="15sp">
+        <!-- pada bagian EditText adalah cara standar untuk memasukkan teks diaplikasi Android. Jika pengguna diminta untuk
+                memasukkan suatu teks, maka View ini lah yang menjadi sarana utama untuk melakukannya,dan pada hint yaitu text yang
+                transparan dimana teks ini akan menghilang ketika kita menginputkan teks,-->
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textview_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+                nya adalah "Gender" dimana pada android text login menampilkan kata,
+                ,dan text dengan berukuran 15sp dan dengan style textnya adalah tebal/bold-->
+    <RadioGroup
+        android:id="@+id/radiogroup_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+<!-- pada  script di atas adalah untuk mengkelompokan dari radio button bersupaya tidak akan terpisah/acak acak pada
+penataan nya-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pria" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wanita" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak diketahui" />
+        <!--pada ketiga script di atas adalah tombol button/pilihan dimana ada 3 pilihan yaitu ada pilihan pria,wanitamdan tidak di
+         ketahui-->
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textview_hobi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Kopetensi"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+                    nya adalah "kopetensi" dimana pada android text login menampilkan kata,
+                    ,dan text dengan berukuran 15sp dan dengan style textnya adalah tebal/bold-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHP" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C#" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JS" />
+<!--pada ke 5 script di atas adalah fungsinya sama dimana checkbox ini adalah pilihan yang bisa di pilih dari satu
+dan beda dari radio batton yang bisa cuma 1 di pilih dari saekian bnyknya radio button,dan pada bagian checkboc ini
+terdiri bahsa pemograman yaitu dari JS,Java,C#,PHP,dan C++-->
+</LinearLayout>

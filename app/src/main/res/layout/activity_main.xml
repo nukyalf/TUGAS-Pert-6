@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+        <!--Liniear Layout adalah design tampilan pada aplikasi kita dengan tata letak secara vertical dan
+        horizontal dimana tata letak aplikasi kita hanya bisa memasukan media secara mendatar dan menurun.-->
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <!--pada bagian TextView terapat bagian text yang akan di tampilkan di bagian tampilan yaitu berupa text
+        nya adalah "LOGIN" dimana pada android text login menampilkan kata,dan pada gravity yaitu yang artinya
+        rata tengah,dan text ini berhuruf tebal/bold yaitu menggunakan script android text style,dan untuk color link
+        dan text color menggunakan warna biru,dan text dengan berukuran 24sp-->
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan Username"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="62dp" />
+        <!-- pada bagian EditText adalah cara standar untuk memasukkan teks diaplikasi Android. Jika pengguna diminta untuk
+        memasukkan suatu teks, maka View ini lah yang menjadi sarana utama untuk melakukannya,dan pada hint yaitu text yang
+        transparan dimana teks ini akan menghilang ketika kita menginputkan teks,-->
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Masukkan Password"
+            android:inputType="numberPassword"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="129dp" />
+        <!-- pada bagian EditText adalah cara standar untuk memasukkan teks diaplikasi Android. Jika pengguna diminta untuk
+                memasukkan suatu teks, maka View ini lah yang menjadi sarana utama untuk melakukannya,dan pada hint yaitu text yang
+                transparan dimana teks ini akan menghilang ketika kita menginputkan teks,-->
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="195dp" />
+        <!-- pada button ini adalah tombol untuk pindah tampilan ke tampilan satunya,dimana pada tombol button ini
+        bernama LOGIN  dan id nya bernama @+id/button3 adalah untuk mengenali dari tombol button ini-->
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:text="REGISTRASI"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="259dp" />
+        <!-- pada button ini adalah tombol untuk pindah tampilan ke tampilan satunya,dimana pada tombol button ini
+        bernama REGISTRASI  dan id nya bernama @+id/button4 adalah untuk mengenali dari tombol button ini-->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
